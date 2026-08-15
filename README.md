@@ -16,7 +16,7 @@ The dashboard fetches real data from the backend and allows users to filter the 
 - 🎯 Set a target for each Tasbeeh
 - 🏷️ Categorize Tasbeehs
 - ✏️ Update existing Tasbeehs
-- 🗑️ Delete Tasbeehs
+- 🗑️ Delete existing Tasbeehs
 - 🔢 Dedicated Tasbeeh counter
 - 🔄 Reset counter
 - 📊 Interactive dashboard
@@ -28,7 +28,7 @@ The dashboard fetches real data from the backend and allows users to filter the 
 - 📊 Average Target statistic
 - 🔎 Interactive category filter
 - ⚡ Dynamic chart updates without page reload
-- 📱 Responsive dashboard design
+- 📱 Responsive design
 - 🌙 Dedicated Virtues of Zikar page
 
 ---
@@ -60,46 +60,54 @@ The dashboard fetches real data from the backend and allows users to filter the 
 ## 📂 Project Structure
 
 ```text
-Tasbeeh-Tracker-Dashboard/
+tasbeeh-tracker-dashboard/
 │
-├── index.html
-├── style.css
-├── script.js
-│
-├── dashboard.html
-├── dashboard.css
-├── dashboard.js
-│
-├── counter.html
-├── counter.js
-│
-├── virtues.html
-├── virtues.css
-├── server.js
-├── package.json
+├── frontend/
+│   │
+│   ├── index.html
+│   ├── style.css
+│   ├── script.js
+│   │
+│   ├── dashboard.html
+│   ├── dashboard.css
+│   ├── dashboard.js
+│   │
+│   ├── counter.html
+│   ├── counter.js
+│   │
+│   ├── virtues.html
+│   ├── virtues.css
+
+├── backend/
+│   │
+│   ├── server.js
+│   ├── package.json
+│   └── package-lock.json
 │
 └── README.md
 
+---
+
 ## 🚀 Getting Started
 
-### Clone the repository
+### 1. Clone the repository
 
 ```bash
 git clone https://github.com/hafsa-nazir03/tasbeeh-tracker-dashboard.git
 ```
 
-### Navigate to the backend folder
+### 2. Navigate to the backend folder
 
 ```bash
 cd backend
 ```
 
-### Install dependencies
+### 3. Install dependencies
 
 ```bash
 npm install
 ```
-### Start the server
+### 4. Start the server
 
 ```bash
 node server.js
@@ -111,7 +119,9 @@ The backend will run on:
 http://localhost:3000
 ```
 
-Open `frontend/index.html` in your browser after starting the backend server.
+### 5. Open the frontend
+
+Open the HTML file in your browser using Live Server or any local development server.
 
 ---
 

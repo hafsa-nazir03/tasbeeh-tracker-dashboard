@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tasbeeh Tracker</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/tasbeehTracker.jpg">
+</head>
+<body>
+        <nav class="top-links">
+        <a href="virtues.html">🤲Virtues of Zikar</a>
+        <a href="dashboard.html">📊 Dashboard</a>
+        </nav>
+        <h1 class="text-h1">Tasbeeh Tracker</h1>
+        <p class="Ayah">‘Remember Me; I will remember you.’</p>
+        <p class="Ayah-Reference"><strong>(al-Baqarah, 2:152)</strong></p>
+        <p class="tagline"> Track your daily dhikr 🌙</p>
+    
+    <form id="tasbeeh-form">
+        <div class="form-group">
+        <label for="name">Tasbeeh Name</label>
+        <input type="text" id="name" placeholder="e.g. Astaghfirullah">
+        </div>
+        <div class="form-group">
+        <label for="target" class="label02">Target</label>
+        <input type="number" id="target" placeholder="e.g. 100">
+        </div>
+
+        <div id="drop-down-main">
+            <label for="category">Select Category</label>
+        <select id="drop-down">
+            <option value="" disabled selected>Select Category</option><!--Is main yeh hoga ky disabled selected say wo select nhi ho sky ga-->
+            <option value="Morning">Morning</option>
+            <option value="Evening">Evening</option>
+            <option value="Daily">Daily</option>
+        </select>
+        </div>
+        
+        <button type="submit" class="button01">Add Tasbeeh</button>
+
+    </form>
+    <h2 class="Tasbeehs">Your Tasbeehs</h2>
+    <p id="Loading">Loading Tasbeehs...</p>
+    <div id="tasbeehList"></div>
+    <script src="script.js"></script>
+</body>
+</html>

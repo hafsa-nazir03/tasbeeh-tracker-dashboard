@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');  
+body{
+    font-family: "Noto Sans", sans-serif;
+     background-color: #b5dfbe;
+     text-align: center;
+}
+
+a{/* anchor tag is by default block or inblock*/
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    /* feeling like a button*/
+    color: white;
+     background: #2d6a4f;
+     padding: 8px 14px;
+     border-radius: 12px;
+     /* feeling like a button*/
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 600;
+    margin-bottom: 8px;
+    margin-top: 10px;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.15);
+    font-size: 1rem;
+    transition: 0.3s ease;
+}
+
+a:hover{
+   background: #1b4332;
+}
+
+h1{
+    color: #1b4332;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 8px;
+    margin-top: 30px;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.15);
+}
+
+p{
+    color: #2d644b;
+    text-align: center;
+    font-size: 1.1rem;
+    margin-bottom: 40px;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.15);
+}
+
+label{
+    text-align: center;
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.15);
+    
+}
+ #category-filter{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border-radius: 12px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.chart-card{
+    background: rgba(255,255,255,0.25);
+    border-radius: 20px;
+    width: 100%;
+    max-width: 700px;
+    margin: 20px auto;/* centers the form*/
+    padding: 20px;/* fpr responsiveness*/
+    box-sizing: border-box;
+    margin-bottom: 50px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+     transition: all 0.3s ease;
+     cursor: pointer;
+}
+
+.chart-card:hover{
+     transform: translateY(-10px);
+ box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+}
+
+@media (max-width: 900px){
+
+    h1{
+        font-size: 2.2rem;
+        margin-top: 80px;
+    }
+
+    p{
+        font-size: 1rem;
+    }
+
+    .chart-card{
+        width: 90%;
+        max-width: 700px;
+        margin-bottom: 30px;
+    }
+
+    #category-filter{
+        width: 80%;
+        max-width: 300px;
+    }
+
+    label{
+        font-size: 1rem;
+    }
+}

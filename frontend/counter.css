@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');  
+body{
+    font-family: "Noto Sans", sans-serif;
+     background-color: #b5dfbe;
+}
+
+.main{
+    text-align: center;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.15);
+     background: rgba(255,255,255,0.25);
+     width: 500px;
+      margin: 40px auto;
+       padding: 30px;
+       border-radius: 20px;
+}
+
+.main h1{
+    color: #1b4332;
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 8px;
+    margin-top: 30px;
+}
+
+.main p{
+    color: #2d6a4f;
+    font-size: 1.1rem;
+    margin-bottom: 40px;
+    font-weight: 500;
+}
+
+.main h3{
+    color: #2d6a4f;
+    font-size: 2rem;
+    margin-bottom: 40px;
+    font-weight: 500;
+}
+
+
+#inc-btn,#reset-btn{
+    background-color: #1e4620;
+    color: #ffffff;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.2s cubic-bezier(0.16,1,0.3,1), box-shadow 0.2s cubic-bezier(0.16,1,0.3,1),
+    background-color 0.2s ease;
+    
+    display: block;/* center kr rha hai*/
+    margin: 20px auto;
+    margin-bottom: 20px;
+    margin-top: 20px;
+
+}
+
+#inc-btn{/* circular appearance of +*/
+    width: 70px;
+    height: 70px;
+    border-radius:50%;
+    font-size:2rem;
+}
+
+#inc-btn:hover,#reset-btn:hover{
+    background-color: #143216;
+    transform: translateY(-2px);
+    box-shadow: 0 10px 15px -3px rgba(30,70,32,0.35);
+}
+
+#inc-btn:active{
+    transform: translateY(0);
+    box-shadow: 0 4px 6px -1px rgba(30,70,32,0.25);
+}
+
+a{
+    text-decoration: none;
+    transition: 0.3s;
+    color:#1b4332;
+    font-weight: 600;
+}
+
+a:hover{
+    transform: translateY(0);
+    color: #318037;
+}
+
+#count{
+    font-size: 3rem;
+    font-weight: 700;
+    color: #1b4332;
+    margin: 20px 0;
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="dashboard.css">
+    <title>Tasbeeh Dashboard</title>
+</head>
+<body>
+    <a href="index.html">📿 Tasbeeh Tracker</a>
+    <h1>Dashboard</h1>
+    <p>View your Tasbeeh data at a glance 📊</p>
+
+    <!--Filter Section-->
+    
+    <section class="filter-section">
+        <div class="filter-div">
+        <label for="category-filter" >Filter by Category : </label>
+        <select id="category-filter">
+            <option value="All">All</option>
+            <option value="Morning">Morning</option>
+            <option value="Evening">Evening</option>
+            <option value="Daily">Daily</option>
+        </select>
+        </div>
+    </section>
+
+    <!--Chart cards-->
+    <section class="stats-container">
+
+        <div class="chart-card">
+            <h3>Total Tasbeehs</h3>
+            <p id="total-tasbeehs">0</p>
+
+            <h3>Total Target</h3>
+            <p id="total-target">0</p>
+      
+            <h3>Average Target</h3>
+            <p id="average-target">0</p>
+        </div>
+
+    
+    </section>
+
+    <section class="charts-container">
+        <div class="chart-card">
+            <h2>Tasbeehs by Category</h2>
+            <canvas id="categorybarchart"></canvas>
+         </div>
+
+        <div class="chart-card">
+            <h2>Category Distribution</h2>
+            <canvas id="categoryDoughnutChart"></canvas>
+        </div>
+
+        <div class="chart-card">
+            <h2>Targets by Tasbeeh</h2>
+            <canvas id="targetChart"></canvas>
+        </div>
+  </section>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="dashboard.js"></script>
+</body>
+</html>

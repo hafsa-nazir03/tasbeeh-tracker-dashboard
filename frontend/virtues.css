@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');  
+body{
+    font-family: "Noto Sans", sans-serif;
+     background-color: #b5dfbe;
+}
+
+.firstHeading{
+    text-align: center;
+    color: #1b4332;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 8px;
+    margin-top: 30px;
+}
+
+.Intro{
+    text-align: center;
+    color: #395f4f;
+    font-size: 1rem;
+    margin-bottom: 40px;
+    font-weight: 500;
+}
+
+.secondHeading{
+    text-align: center;
+     color: #1b4332;
+    font-size: 1.7rem;
+    margin-bottom: 30px;
+}
+
+.card{
+     background: rgba(255,255,255,0.3);
+     padding: 20px;
+     border-radius: 15px;
+     margin: 20px auto;
+     transition: 0.3s ease;
+     text-align: center;
+     max-width: 700px;/* box ka size adjust hojata hai*/
+     cursor: text;
+     border-left: 6px solid #2d6a4f;
+}
+
+.card:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+}
+
+.verse, .hadees{
+    line-height: 1.8;
+    font-style: italic;
+    color: #1b4332;
+    font-weight: 500;
+}
+
+.reference{
+    display: inline-block;
+    background:#d8f3dc;
+    padding: 8px 16px;
+    border-radius: 20px;
+    margin-top: 15px;
+    color: #1b4332;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+.sixthHeading{
+    text-align: center;
+    color: #1b4332;
+    font-size: 1.7rem;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+a{/* anchor tag is by default block or inblock*/
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    /* feeling like a button*/
+    color: white;
+     background: #2d6a4f;
+     padding: 8px 14px;
+     border-radius: 12px;
+     /* feeling like a button*/
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 600;
+    margin-bottom: 8px;
+    margin-top: 10px;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.15);
+    font-size: 1rem;
+    transition: 0.3s ease;
+}
+
+a:hover{
+   background: #1b4332;
+}
